@@ -863,3 +863,288 @@ a {
 .copyright > a:is(:hover, :focus) {
   color: var(--carolina-blue);
 }
+
+/** ───────────────────────────────────── Media Queries /*/
+/**
+  * ────── responsive for large than 350px screen
+  */
+@media (min-width: 350px) {
+  /* === Featured === */
+  .featured-car-card .card-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .featured-car-card .card-price {
+    margin-right: auto;
+  }
+
+  .featured-car-card .btn:last-child {
+    min-width: max-content;
+    padding-inline: 15px;
+  }
+}
+
+/**
+ * ────── responsive for large than 580px screen
+ */
+
+@media (min-width: 580px) {
+  /* === Reused Styles === */
+  .container {
+    max-width: 540px;
+    margin-inline: auto;
+  }
+
+  /* === Header === */
+  .header-actions .btn span {
+    display: block;
+    font-weight: var(--fw-400);
+    padding-inline: 15px;
+  }
+
+  .header-actions .btn:first-of-type ion-icon {
+    display: none;
+  }
+}
+
+/**
+ * ────── responsive for large than 768px screen
+ */
+
+@media (min-width: 768px) {
+  /* === Custom Property === */
+  :root {
+    /* === Typography === */
+    --fs-1: 2.625rem;
+  }
+
+  /* === Reused Styles === */
+  .container {
+    max-width: 720px;
+  }
+
+  /* === Header === */
+  .header-actions {
+    gap: 30px;
+  }
+
+  .header-contact {
+    display: block;
+    text-align: center;
+  }
+
+  .header-contact .contact-link {
+    color: var(--space-cadet);
+    font-family: var(--ff-nunito);
+    font-size: var(--fs-5);
+    line-height: 1.3;
+  }
+
+  .header-contact .contact-link:is(:hover, :focus) {
+    color: var(--carolina-blue);
+  }
+
+  .header-contact .contact-time {
+    color: var(--independence);
+    font-size: var(--fs-7);
+  }
+
+  /* === Hero === */
+  .hero {
+    position: relative;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+  }
+
+  .hero-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 0.8fr;
+  }
+
+  .input-wrapper:not(:last-of-type) {
+    border-bottom: none;
+    border-right: 1px solid hsla(0, 0%, 0%, 0.08);
+  }
+
+  .input-label {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .hero-banner {
+    display: block;
+    background: url('../images/hero-banner.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 100px;
+    bottom: 50px;
+    left: 65%;
+    width: 500px;
+    border-radius: 30px;
+    z-index: -1;
+  }
+
+  /* === Featured === */
+  .featured-car-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* === Get Start === */
+  .get-start-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* === Footer === */
+  .footer-brand {
+    width: 100%;
+  }
+
+  .footer-text {
+    max-width: 400px;
+  }
+
+  .footer-bottom {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 30px;
+    box-shadow: var(--shadow-1);
+  }
+
+  .social-list {
+    margin-bottom: 0;
+  }
+}
+
+/**
+ * ────── responsive for large than 992px screen
+ */
+
+@media (min-width: 992px) {
+  /* === Reused Styles === */
+  .container {
+    max-width: 960px;
+  }
+
+  /* === Hero === */
+  .hero .container {
+    width: 100%;
+  }
+
+  /* === Blog === */
+  .blog .has-scrollbar {
+    padding-bottom: 50px;
+  }
+
+  .blog .has-scrollbar > li {
+    max-width: 450px;
+  }
+
+  /* === Footer === */
+  .footer-list:not(:last-of-type) {
+    width: 25%;
+  }
+
+  .footer-list:last-of-type {
+    width: 50%;
+  }
+}
+
+/**
+ * ────── responsive for large than 1200px screen
+ */
+
+@media (min-width: 1200px) {
+  /* === Custom Property === */
+  :root {
+    /* === Typography === */
+    --fs-1: 2.875rem;
+    --fs-2: 2rem;
+  }
+
+  /* === Reused Styles === */
+  .container {
+    max-width: 1170px;
+  }
+
+  /* === Header === */
+  .overlay,
+  .nav-toggle-btn {
+    display: none;
+  }
+
+  .navbar,
+  .navbar.active {
+    all: unset;
+  }
+
+  .navbar-link {
+    margin-bottom: 0;
+    font-weight: var(--fw-600);
+  }
+
+  .navbar-list {
+    display: flex;
+    gap: 50px;
+  }
+
+  /* === Hero === */
+  .hero {
+    min-height: 100vh;
+  }
+
+  .hero-banner {
+    left: auto;
+    right: 50px;
+    width: 630px;
+  }
+
+  .hero-form {
+    max-width: 900px;
+  }
+
+  .hero-form .btn {
+    --width: calc(100% - 40px);
+    --height: 50px;
+    margin: 20px;
+    text-transform: uppercase;
+  }
+
+  /* === Featured === */
+  .featured-car-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  /* === Get Start === */
+  .get-start-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* === Blog === */
+  .blog .has-scrollbar > li {
+    max-width: 340px;
+    scroll-snap-align: center;
+  }
+
+  /* === Footer === */
+  .footer-brand {
+    width: 33.33%;
+  }
+
+  .footer-text {
+    max-width: 35ch;
+  }
+
+  .footer-list:not(:last-of-type) {
+    width: 16.66%;
+  }
+
+  .footer-list:last-of-type {
+    width: 33.33%;
+  }
+}
