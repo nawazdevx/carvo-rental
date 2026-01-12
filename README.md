@@ -1,76 +1,135 @@
 <div>
-  <h1>Carvo — Car Rental Landing Page</h1>
+  <h1>Carvo Rental</h1>
 
   <p>
-    A modern and fully responsive car rental landing page, <br />
-    built using HTML, CSS, and JavaScript. Perfect for showcasing rental vehicles with style.
+    <strong>About the Project:</strong>
+    Carvo is a car rental landing page built with HTML, CSS, and JavaScript. It features a clean, modern design with a search form, car listings, a step-by-step rental guide, and a blog section — designed to look polished and professional.
   </p>
 
   <p>
-    <strong>Note:</strong> I started building HTML, CSS, and JavaScript projects in 2022. <br />
-    At that time, I focused on learning first and began uploading to GitHub recently. <br />
-    Now I'm working with React.js and Next.js, and seeking opportunities as a frontend or web developer.
+    <strong>Key Highlights:</strong>
+    Fully responsive layout across all screen sizes, smooth mobile navigation, a sticky header on scroll, and well-structured car listing cards with pricing details.
   </p>
 </div>
 
-## What's Inside
-- `index.html` — complete page structure and content
-- `assets/css/style.css` — comprehensive styling with customizable `:root` CSS variables
-- `assets/js/script.js` — mobile menu toggle and header scroll effects
-- `assets/images/` — car photos, hero banner, blog images, and favicon
+<details open>
+  <summary><h2>Project Details</h2></summary>
 
-## Technologies Used
-HTML5 · CSS3 · Vanilla JavaScript · Google Fonts (Nunito, Open Sans) · Ionicons
+  <details>
+    <summary><h4>What's Inside</h4></summary>
+    <ul>
+      <li><strong>Header</strong> — Sticky navigation with logo, links, phone number, and CTA button.</li>
+      <li><strong>Hero Section</strong> — Headline, subtext, and a search form with three input fields.</li>
+      <li><strong>Featured Cars</strong> — Six car cards showing model, year, specs, and monthly price.</li>
+      <li><strong>How It Works</strong> — Four-step guide explaining the car rental process with icons.</li>
+      <li><strong>Blog Section</strong> — Horizontally scrollable blog cards with categories and dates.</li>
+      <li><strong>Footer</strong> — Brand info, navigation links, New York neighborhoods, and social icons.</li>
+    </ul>
+  </details>
 
-## Features
-- Fully responsive layout across all devices (mobile, tablet, desktop)
-- Interactive mobile navigation with smooth toggle animation
-- Hero section with advanced search form (brand, budget, year filters)
-- Featured cars showcase with detailed specifications and pricing
-- Step-by-step rental process guide with icon-based cards
-- Blog section with horizontal scrolling functionality
-- Favorite button interaction for each car listing
-- Scroll-based header styling with active state
+  <details>
+    <summary><h4>Key Features</h4></summary>
+    <ul>
+      <li><strong>Responsive Design</strong> — Layout adapts cleanly from mobile to large desktop screens.</li>
+      <li><strong>Mobile Navigation</strong> — Slide-in menu with overlay toggle for smaller screens.</li>
+      <li><strong>Sticky Header</strong> — Header adds a shadow effect when the user scrolls down.</li>
+      <li><strong>Car Search Form</strong> — Three-field form to filter by brand, budget, and model year.</li>
+      <li><strong>Car Listing Cards</strong> — Cards display car image, specs, fuel type, and monthly price.</li>
+      <li><strong>Scrollable Blog Section</strong> — Horizontal scroll with snap points for smooth browsing.</li>
+      <li><strong>Favourite Button</strong> — Heart icon button on each car card for saving preferences.</li>
+    </ul>
+  </details>
 
-## Quick Start
-1. **Clone the repository:**  
-   ```bash
-   git clone https://github.com/nawazdevx/carvo-rental.git
-   ```
+  <details>
+    <summary><h4>Technologies Used</h4></summary>
+    <ul>
+      <li><strong>HTML5</strong> — Semantic markup used to structure all sections and content.</li>
+      <li><strong>CSS3</strong> — Custom properties, grid, flexbox, and media queries for full responsiveness.</li>
+      <li><strong>JavaScript</strong> — Handles mobile menu toggle and scroll-based header activation.</li>
+      <li><strong>Google Fonts</strong> — Nunito and Open Sans used for clean, readable typography.</li>
+      <li><strong>Ionicons</strong> — Icon library used for UI icons throughout the page.</li>
+    </ul>
+  </details>
 
-2. **Open the project:**  
-   - Simply open `index.html` in your browser  
-   - Or run a local server:  
-     ```bash
-     python -m http.server 3000
-     ```
-     Then visit `http://localhost:3000`
+  <details>
+    <summary><h4>Project Structure</h4></summary>
+    <pre>
+carvo-rental/
+│
+├── index.html                 # Main HTML with header, hero, featured cars, guide, blog, footer
+│
+├── assets/
+│   ├── css/
+│   │   └── style.css         # All styles, layouts, animations, and responsive breakpoints
+│   │
+│   ├── js/
+│   │   └── script.js         # Mobile menu toggle and header scroll effect
+│   │
+│   └── images/               # Car images, blog thumbnails, hero banner, favicon
+│
+└── README.md                 # Project documentation
+    </pre>
+  </details>
 
-## Customization
-- Edit site content, meta tags, and car listings in `index.html`
-- Swap images in `assets/images/` folder (maintain filenames or update references)
-- Modify colors, fonts, and spacing through `:root` variables in `style.css`
-- Adjust grid layouts and breakpoints in the media queries section
-- Connect the hero search form to your backend or a third-party service
+  <details>
+    <summary><h4>Quick Start</h4></summary>
+    <ol>
+      <li>
+        <strong>Clone the repository:</strong>
+        <pre><code>git clone https://github.com/nawazdevx/carvo-rental.git</code></pre>
+      </li>
 
-## License
-This project is licensed under the [MIT License](https://choosealicense.com/licenses/mit/).
+      <li>
+        <strong>Open the project:</strong>
+        <ul>
+          <li>Open <code>index.html</code> directly in your browser</li>
+          <li>Or run a local server:</li>
+        </ul>
+        <pre><code>python -m http.server 3000</code></pre>
+        Then visit <code>http://localhost:3000</code>
+      </li>
 
-## Contact
-If you want to contact me, you can reach me at [LinkedIn](https://www.linkedin.com/in/nawazdevx).
+      <li>
+        <strong>Start Customizing:</strong>
+        <ul>
+          <li>Update car names, images, and prices in <code>index.html</code></li>
+          <li>Change colors and fonts using CSS variables in <code>style.css</code></li>
+          <li>Replace blog images and titles in <code>index.html</code></li>
+          <li>Update the hero text and search form labels in <code>index.html</code></li>
+          <li>Swap car and blog images inside the <code>assets/images/</code> folder</li>
+        </ul>
+      </li>
+    </ol>
 
-## Support
-If you find this project useful, please consider starring it on GitHub ⭐ to show your support!
+  </details>
+</details>
+
+<p>
+  <strong>License:</strong>
+  This project is licensed under the <a href="https://choosealicense.com/licenses/mit/">MIT License</a>.
+</p>
+
+<p>
+  <strong>Contact:</strong>
+  Connect with me on <a href="https://www.linkedin.com/in/nawazdevx">LinkedIn</a> or visit my <a href="https://nawazdevx.vercel.app/">Portfolio</a>.
+</p>
+
+<p>
+  <strong>Support:</strong>
+  Found this helpful? Give it a ⭐ on GitHub! Thank you.
+</p>
 
 <br />
 
-<div align="center">
-  <h1>Project Preview</h1>
-  
+<div>
+  <h2>Project Preview</h2>
+
   <p>
-    You can view the live project here ➜
-    <a href="https://nawazdevx.github.io/carvo-rental/" target="_blank"><strong>Live Demo</strong></a>
+    <strong>Live project ➜</strong>
+    <a href="https://nawazdevx.github.io/carvo-rental/" target="_blank">
+      <strong>Live Demo</strong>
+    </a>
   </p>
 
-  <img src="./assets/images/readme-image.png" alt="Desktop Demo" />
+  <img src="./assets/images/readme-image.png" alt="Desktop Preview" />
 </div>
